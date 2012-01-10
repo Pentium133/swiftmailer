@@ -14,7 +14,7 @@ Swift_Preferences::getInstance()->setCharset('utf-8');
 // If possible, use a disk cache to enable attaching large attachments etc
 if (ini_get('upload_tmp_dir') && is_writable(ini_get('upload_tmp_dir') . '/'))
 {
-  SwiftMailer_Preferences::getInstance()
+  Swift_Preferences::getInstance()
     -> setTempDir(ini_get('upload_tmp_dir'))
     -> setCacheType('disk');
 }
